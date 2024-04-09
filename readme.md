@@ -54,7 +54,7 @@ curl -X GET http://localhost:8080/mul/2/2
 ```
 ### Divide
 ```sh
-curl -X GET http://localhost:8080/add/20/4
+curl -X GET http://localhost:8080/div/20/4
 ```
 
 `2xx`
@@ -77,7 +77,7 @@ curl -X GET http://localhost:8080/add/20/4
 ```
 ### Reduce
 ```sh
-curl -X GET http://localhost:8080/add/100/1
+curl -X GET http://localhost:8080/red/100/1
 ```
 
 `2xx`
