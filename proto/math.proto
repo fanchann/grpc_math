@@ -1,0 +1,21 @@
+syntax = "proto3";
+
+package math;
+
+option go_package="github.com/fanchann/grpc_math/proto";
+
+message Request{
+    int64 a = 1;
+    int64 b = 2;
+}
+
+message Response{
+    int64 result = 1;
+}
+
+service MathService {
+    rpc Add (Request) returns (Response);
+    rpc Multiply (Request) returns (Response);
+    rpc Reduce (Request) returns (Response);
+    rpc Devide (Request) returns (Response);
+}
