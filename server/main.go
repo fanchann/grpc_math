@@ -9,6 +9,7 @@ import (
 
 	"github.com/joho/godotenv"
 	"google.golang.org/grpc"
+	"google.golang.org/grpc/reflection"
 
 	"github.com/fanchann/grpc_math/proto"
 	"github.com/fanchann/grpc_math/server/service"
@@ -29,6 +30,9 @@ func main() {
 
 	// grpc server
 	grpcSvr := grpc.NewServer()
+
+	// reflection API
+	reflection.Register(grpcSvr)
 
 	// math service
 	mathSvc := service.NewMathServiceImpl()
