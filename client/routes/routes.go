@@ -4,9 +4,9 @@ import (
 	"net/http"
 	"strconv"
 
-	"github.com/fanchann/grpc_math/helpers"
+	"github.com/fanchann/grpc_math/client/helpers"
+	"github.com/fanchann/grpc_math/client/web"
 	"github.com/fanchann/grpc_math/proto"
-	"github.com/fanchann/grpc_math/web"
 )
 
 type IRoutes interface {
